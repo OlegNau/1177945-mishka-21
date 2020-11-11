@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Олег Наумов](https://up.htmlacademy.ru/adaptive/21/user/1177945).
-* Наставник: `Неизвестно`.
+* Наставник: `Екатерина Комнатная`.
 
 ---
 
