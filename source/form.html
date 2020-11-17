@@ -16,6 +16,8 @@
           <a class="page-navigation__item" href="">Вязание на заказ</a>
           <a class="page-navigation__item" href="">Поиск по сайту</a>
           <a class="page-navigation__item" href="">Корзина: пока пуста</a>
+          <a class="page-navigation__item" href="">Новые поступления</a>
+          <a class="page-navigation__item" href="">Распродажа</a>
         </div>
       </nav>
       <span class="page-header__delivery">Бесплатная доставка по России</span>
@@ -25,88 +27,88 @@
         <h1 class="form-page-main__heading">Вязание на заказ</h1>
       </div>
       <p class="form-page-main__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="form-page-form">
+      <form class="form">
         <h2 class="visually-hidden">заявка на заказ</h2>
-        <div class="form-page-form__type">
-          <span class="form-page-form__name">Тип</span>
-          <ul class="radio-form">
+        <div class="form__radio-container">
+          <span class="form__name">Тип</span>
+          <ul class="form__radio">
             <li>
-              <input class="visually-hidden radio-form__input" type="radio" name="radio" id="interior" value="Аксессуар для интерьера" checked>
+              <input class="visually-hidden form__radio-input" type="radio" name="radio" id="interior" value="Аксессуар для интерьера" checked>
               <label for="interior">Аксессуар для интерьера</label>
             </li>
             <li>
-              <input class="visually-hidden radio-form__input" type="radio" name="radio" id="toy" value="Детская игрушка">
+              <input class="visually-hidden form__radio-input" type="radio" name="radio" id="toy" value="Детская игрушка">
               <label for="toy">Детская игрушка</label>
             </li>
           </ul>
         </div>
-        <div class="form-page-form__color-container">
-          <div class="form-page-form__color">
-          <span class="form-page-form__name">Цвет</span>
-          <ul class="checkbox-form">
+        <div class="form__color-container">
+          <div class="form__color">
+          <span class="form__name">Цвет</span>
+          <ul class="form__checkbox-container">
             <li>
-              <input class="visually-hidden checkbox-form-input" type="checkbox" name="white" id="white" checked>
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="white" id="white" checked>
               <label for="white">Белый></label>
             </li>
             <li>
-              <input class="visually-hidden checkbox-form-input" type="checkbox" name="gray" id="gray" checked>
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="gray" id="gray" checked>
               <label for="gray">Серый</label>
             </li>
             <li>
-              <input class="visually-hidden checkbox-form-input" type="checkbox" name="tiffani" id="tiffani">
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="tiffani" id="tiffani">
               <label for="tiffani">"Тиффани"</label>
             </li>
             <li>
-              <input class="visually-hidden checkbox-form-input" type="checkbox" name="black" id="black">
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="black" id="black">
               <label for="black">Черный</label>
             </li>
             <li>
-              <input class="visually-hidden checkbox-form-input" type="checkbox" name="pink" id="pink">
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="pink" id="pink">
               <label for="pink">Розовый</label>
             </li>
             <li>
-              <input class="visually-hidden checkbox-form-input" type="checkbox" name="orange" id="orange">
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="orange" id="orange">
               <label for="orange">Оранжевый</label>
             </li>
           </ul>
         </div>
       </div>
-        <div class="form-page-form__customer">
-          <span class="form-page-form__name">ФИО</span>
-          <ul class="customer-name-form">
+        <div class="form__customer">
+          <span class="form__name">ФИО</span>
+          <ul class="form__customer-name">
             <li>
               <label for="name">Имя:</label>
-              <input class="customer-name-form__item" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+              <input class="form__customer-item" type="text" name="name" id="name" placeholder="Введите ваше имя*">
             </li>
             <li>
               <label for="surname">Фамилия:</label>
-              <input class="customer-name-form__item" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
+              <input class="form__customer-item" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
             </li>
             <li>
               <label for="patronymic">Отчество:</label>
-              <input class="customer-name-form__item" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+              <input class="form__customer-item" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
             </li>
           </ul>
         </div>
-        <div class="form-page-form__user-contacts-container">
-          <div class="form-page-form__user-contacts">
-            <div class="user-contacts">
-              <label class="user-contacts__label" for="phone">Тел</label>
-              <input class="user-contacts__input user-contacts__input--phone" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        <div class="form__user-contacts-container">
+          <div class="form__user-contacts">
+            <div class="form__contacts">
+              <label class="form__contacts-label" for="phone">Тел</label>
+              <input class="form__contacts-input form__contacts-input--phone" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
             </div>
             <div class="user-contacts">
-              <label class="user-contacts__label" for="email">E-mail</label>
-              <input class="user-contacts__input user-contacts__input--email" type="email" name="email" id="email" placeholder="Ваш Email*">
+              <label class="form__contacts-label" for="email">E-mail</label>
+              <input class="form__contacts-input form__contacts-input--email" type="email" name="email" id="email" placeholder="Ваш Email*">
             </div>
           </div>
         </div>
-        <div class="form-page-form__comment">
-          <label for="comment" class="form-page-form__name">Доп</label>
-          <textarea class="form-page-form__comment-area" name="comment" id="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <div class="form__comment">
+          <label for="comment" class="form__comment-name">Доп</label>
+          <textarea class="form__comment-area" name="comment" id="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
-        <div class="form-page-form__footer">
+        <div class="form__footer">
           <span class="">*Поля обязательны для заполнения</span>
-          <button class="form-page-form__button" type="submit" formaction="https://echo.htmlacademy.ru/">Отправить заказ</button>
+          <button class="form__button" type="submit" formaction="https://echo.htmlacademy.ru/">Отправить заказ</button>
         </div>
       </form>
     </main>
