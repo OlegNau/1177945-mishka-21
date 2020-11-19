@@ -6,14 +6,14 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип интернет-магазина Мишка">
       </a>
       <nav class="page-navigation">
         <button class="page-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="page-navigation__wrapper">
           <a href="catalog.html" class="page-navigation__item">Каталог товаров</a>
-          <a href="form.html" class="page-navigation__item">Вязание на заказ</a>
+          <a class="page-navigation__item" href="">Вязание на заказ</a>
           <a class="page-navigation__item" href="">Поиск по сайту</a>
           <a class="page-navigation__item" href="">Корзина: пока пуста</a>
           <a class="page-navigation__item" href="">Новые поступления</a>
@@ -22,85 +22,99 @@
       </nav>
       <span class="page-header__delivery">Бесплатная доставка по России</span>
     </header>
-    <main class="page-main">
-      <h1>Милые штуки ручной работы для дома</h1>
-      <section class="categories">
-        <h2 class="visually-hidden">Выберите категорию</h2>
-        <a class="categories__item categories__item--interior">Предметы интерьера</a>
-        <a class="categories__item categories__item--toys">Детские игрушки</a>
-      </section>
-      <section class="week-product">
-        <h2 class="page-main__heading page-main__heading--week-product">Вязаные корзинки</h2>
-        <span class="week-product__caption">Товар недели</span>
-        <p class="week-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <ul class="week-product__properties">
-          <li class="week-product__item">
-            <span class="week-product__item-argument">Цвет:</span>
-            <span class="week-product__item-value">«Тиффани»/серый</span>
-          </li>
-          <li class="week-product__item">
-            <span class="week-product__item-argument">Диаметр:</span>
-            <span class="week-product__item-value">25 см</span>
-          </li>
-          <li class="week-product__item">
-            <span class="week-product__item-argument">Высота:</span>
-            <span class="week-product__item-value">15 см</span>
-          </li>
-        </ul>
-        <img class="week-product__image" src="https://via.placeholder.com/260x315" width="260" height="315" alt="Полосатые взяанные корщинки">
-        <span class="week-product__price">Цена: 990 руб.</span>
-        <a class="week-product__to-order" href="">Заказать</a>
-      </section>
-      <section class="about-us">
-        <h2 class="page-main__heading">Коротко о нас</h2>
-        <ul class="about-us__list">
-          <li class="about-us__item about-us__item--materials">Экологически чистые материалы</li>
-          <li class="about-us__item about-us__item--style">Скандинавский стиль по российской цене</li>
-          <li class="about-us__item about-us__item--likes">Увеличивает лайки на фотографиях</li>
-          <li class="about-us__item about-us__item--technology">Связано вручную с любовью и умилением</li>
-          <li class="about-us__item about-us__item--support">Поддержка отечественного производителя</li>
-          <li class="about-us__item about-us__item--package">Поставляется в подарочной упаковке</li>
-        </ul>
-      </section>
-      <section class="reviews">
-        <h2 class="page-main__heading">Отзывы</h2>
-        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-          у популярных инстамамочек.
-          В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-          и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <a href="" class="reviews__author">Анастасия Красильникова</a>
-        <a href="" class="reviews__author-page">@misssssiskras</a>
-        <div class="reviews__switch">
-          <button type="button" class="switch-button switch-button--previous">
-            <span class="visually-hidden">Назад</span>
-          </button>
-          <button type="button" class="switch-button witch-button--next">
-            <span class="visually-hidden">Вперед</span>
-          </button>
+    <main class="form-page-main">
+      <div class="form-page-main__heading-container">
+        <h1 class="page__main-heading">Вязание на заказ</h1>
+      </div>
+      <p class="form-page-main__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="form">
+        <h2 class="visually-hidden">заявка на заказ</h2>
+        <div class="form__radio-container">
+          <span class="form__name">Тип</span>
+          <ul class="form__radio">
+            <li>
+              <input class="visually-hidden form__radio-input" type="radio" name="radio" id="interior" value="Аксессуар для интерьера" checked>
+              <label for="interior">Аксессуар для интерьера</label>
+            </li>
+            <li>
+              <input class="visually-hidden form__radio-input" type="radio" name="radio" id="toy" value="Детская игрушка">
+              <label for="toy">Детская игрушка</label>
+            </li>
+          </ul>
         </div>
-        <a class="reviews__write" href="">Написать</a>
-      </section>
-      <section class="contacts">
-        <h2 class="page-main__heading">Контакты</h2>
-        <div>
-          <div class="contacts__item-box">
-            <span class="contacts__item">e-mail:</span>
-            <a class="contacts__item-information" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <div class="form__color-container">
+          <div class="form__color">
+          <span class="form__name">Цвет</span>
+          <ul class="form__checkbox-container">
+            <li>
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="white" id="white" checked>
+              <label for="white">Белый></label>
+            </li>
+            <li>
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="gray" id="gray" checked>
+              <label for="gray">Серый</label>
+            </li>
+            <li>
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="tiffani" id="tiffani">
+              <label for="tiffani">"Тиффани"</label>
+            </li>
+            <li>
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="black" id="black">
+              <label for="black">Черный</label>
+            </li>
+            <li>
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="pink" id="pink">
+              <label for="pink">Розовый</label>
+            </li>
+            <li>
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="orange" id="orange">
+              <label for="orange">Оранжевый</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+        <div class="form__customer">
+          <span class="form__name">ФИО</span>
+          <ul class="form__customer-name">
+            <li>
+              <label for="name">Имя:</label>
+              <input class="form__customer-item" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+            </li>
+            <li>
+              <label for="surname">Фамилия:</label>
+              <input class="form__customer-item" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
+            </li>
+            <li>
+              <label for="patronymic">Отчество:</label>
+              <input class="form__customer-item" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+            </li>
+          </ul>
+        </div>
+        <div class="form__user-contacts-container">
+          <div class="form__user-contacts">
+            <div class="form__contacts">
+              <label class="form__contacts-label" for="phone">Тел</label>
+              <input class="form__contacts-input form__contacts-input--phone" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            </div>
+            <div class="user-contacts">
+              <label class="form__contacts-label" for="email">E-mail</label>
+              <input class="form__contacts-input form__contacts-input--email" type="email" name="email" id="email" placeholder="Ваш Email*">
+            </div>
           </div>
-          <div class="contacts__item-box">
-            <span class="contacts__item">адрес:</span>
-            <address class="contacts__item-information">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
-          </div>
         </div>
-        <div class="contacts__map">
-          <img src="https://via.placeholder.com/320x454" width="320" height="454" alt="Магазин Мишка на карте">
+        <div class="form__comment">
+          <label for="comment" class="form__comment-name">Доп</label>
+          <textarea class="form__comment-area" name="comment" id="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
-        <a class="contacts__write-to-us" href="">Напишите нам</a>
-      </section>
+        <div class="form__footer">
+          <span class="">*Поля обязательны для заполнения</span>
+          <button class="form__button" type="submit" formaction="https://echo.htmlacademy.ru/">Отправить заказ</button>
+        </div>
+      </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__container">
-        <a class="page-footer__logo">
+        <a href="index.html" class="page-footer__logo">
           <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип нашего магазина">
         </a>
         <h2 class="visually-hidden">Наш магазин в социальных сетях</h2>
@@ -140,24 +154,5 @@
         </div>
       </div>
     </footer>
-    <form class="popup">
-      <h2 class="popup__heding">Добавить в корзину</h2>
-      <span class="popup__text">Выберите размер</span>
-      <ul class="popup__radio">
-        <li>
-          <input class="visually-hidden popup__input" type="radio" name="radio" id="s" value="s" checked>
-          <label class="popup__label" for="s">s</label>
-        </li>
-        <li>
-          <input class="visually-hidden popup__input" type="radio" name="radio" id="m" value="m">
-          <label class="popup__label" for="m">m</label>
-        </li>
-        <li>
-          <input class="visually-hidden popup__input" type="radio" name="radio" id="l" value="l">
-          <label class="popup__label" for="l">l</label>
-        </li>
-      </ul>
-      <button class="popup__button">Добавить</button>
-    </form>
   </body>
 </html>

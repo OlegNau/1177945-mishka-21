@@ -6,14 +6,14 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип интернет-магазина Мишка">
       </a>
       <nav class="page-navigation">
         <button class="page-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="page-navigation__wrapper">
-          <a href="catalog.html" class="page-navigation__item">Каталог товаров</a>
-          <a href="form.html" class="page-navigation__item">Вязание на заказ</a>
+          <a class="page-navigation__item" href="">Каталог товаров</a>
+          <a href="form.html" class="page-navigation__item" >Вязание на заказ</a>
           <a class="page-navigation__item" href="">Поиск по сайту</a>
           <a class="page-navigation__item" href="">Корзина: пока пуста</a>
           <a class="page-navigation__item" href="">Новые поступления</a>
@@ -22,85 +22,84 @@
       </nav>
       <span class="page-header__delivery">Бесплатная доставка по России</span>
     </header>
-    <main class="page-main">
-      <h1>Милые штуки ручной работы для дома</h1>
-      <section class="categories">
-        <h2 class="visually-hidden">Выберите категорию</h2>
-        <a class="categories__item categories__item--interior">Предметы интерьера</a>
-        <a class="categories__item categories__item--toys">Детские игрушки</a>
-      </section>
-      <section class="week-product">
-        <h2 class="page-main__heading page-main__heading--week-product">Вязаные корзинки</h2>
-        <span class="week-product__caption">Товар недели</span>
-        <p class="week-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <ul class="week-product__properties">
-          <li class="week-product__item">
-            <span class="week-product__item-argument">Цвет:</span>
-            <span class="week-product__item-value">«Тиффани»/серый</span>
-          </li>
-          <li class="week-product__item">
-            <span class="week-product__item-argument">Диаметр:</span>
-            <span class="week-product__item-value">25 см</span>
-          </li>
-          <li class="week-product__item">
-            <span class="week-product__item-argument">Высота:</span>
-            <span class="week-product__item-value">15 см</span>
-          </li>
-        </ul>
-        <img class="week-product__image" src="https://via.placeholder.com/260x315" width="260" height="315" alt="Полосатые взяанные корщинки">
-        <span class="week-product__price">Цена: 990 руб.</span>
-        <a class="week-product__to-order" href="">Заказать</a>
-      </section>
-      <section class="about-us">
-        <h2 class="page-main__heading">Коротко о нас</h2>
-        <ul class="about-us__list">
-          <li class="about-us__item about-us__item--materials">Экологически чистые материалы</li>
-          <li class="about-us__item about-us__item--style">Скандинавский стиль по российской цене</li>
-          <li class="about-us__item about-us__item--likes">Увеличивает лайки на фотографиях</li>
-          <li class="about-us__item about-us__item--technology">Связано вручную с любовью и умилением</li>
-          <li class="about-us__item about-us__item--support">Поддержка отечественного производителя</li>
-          <li class="about-us__item about-us__item--package">Поставляется в подарочной упаковке</li>
-        </ul>
-      </section>
-      <section class="reviews">
-        <h2 class="page-main__heading">Отзывы</h2>
-        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-          у популярных инстамамочек.
-          В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-          и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <a href="" class="reviews__author">Анастасия Красильникова</a>
-        <a href="" class="reviews__author-page">@misssssiskras</a>
-        <div class="reviews__switch">
-          <button type="button" class="switch-button switch-button--previous">
-            <span class="visually-hidden">Назад</span>
-          </button>
-          <button type="button" class="switch-button witch-button--next">
-            <span class="visually-hidden">Вперед</span>
-          </button>
-        </div>
-        <a class="reviews__write" href="">Написать</a>
-      </section>
-      <section class="contacts">
-        <h2 class="page-main__heading">Контакты</h2>
-        <div>
-          <div class="contacts__item-box">
-            <span class="contacts__item">e-mail:</span>
-            <a class="contacts__item-information" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+    <main class="catalog-page-main">
+      <h2 class="visually-hidden">Каталог товаров</h2>
+      <div class="catalog-page-main__heading-container">
+        <h1 class="page__main-heading">Каталог товаров</h1>
+      </div>
+      <ul class="catalog-page-main__products-list">
+        <li class="products-item">
+          <a class="products-item__image-link" href="">
+            <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Вязанный зайчик-попрыгайчик">
+          </a>
+          <div class="products-item__info">
+            <div class="products-item__name-and-properties">
+              <a class="products-item__name" href="">Зайчик-попрыгайчик</a>
+              <span class="products-item__properties">Рост 30 см, вес 200 г</span>
+            </div>
+            <div class="products-item__price-and-basket">
+              <span class="products-item__price">1 200 руб.</span>
+              <a class="products-item__basket">
+                <span class="visually-hidden">В корзину</span>
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Добавление в корзину">
+                  <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black"/>
+                  </svg>
+                </a>
+            </div>
           </div>
-          <div class="contacts__item-box">
-            <span class="contacts__item">адрес:</span>
-            <address class="contacts__item-information">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
+        </li>
+        <li class="products-item">
+          <a class="products-item__image-link" href="">
+            <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Вязанная корзинка для белья">
+          </a>
+          <div class="products-item__info">
+            <div class="products-item__name-and-properties">
+              <a class="products-item__name" href="">Корзинка для белья</a>
+              <span class="products-item__properties">Диаметр 15 см, высота 10 см</span>
+            </div>
+            <div class="products-item__price-and-basket">
+              <span class="products-item__price">690 руб.</span>
+              <a class="products-item__basket">
+                <span class="visually-hidden">В корзину</span>
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Добавление в корзину">
+                  <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black"/>
+                </svg>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="contacts__map">
-          <img src="https://via.placeholder.com/320x454" width="320" height="454" alt="Магазин Мишка на карте">
-        </div>
-        <a class="contacts__write-to-us" href="">Напишите нам</a>
-      </section>
+        </li>
+        <li class="products-item">
+          <a class="products-item__image-link" href="">
+            <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Вязанная корзинка для игрушек">
+          </a>
+          <div class="products-item__info">
+            <div class="products-item__name-and-properties">
+              <a class="products-item__name" href="">Большая корзинка для игрушек</a>
+              <span class="products-item__properties">Диаметр 30 см, высота 30 см</span>
+            </div>
+            <div class="products-item__price-and-basket">
+              <span class="products-item__price">1 500 руб.</span>
+              <a class="products-item__basket">
+                <span class="visually-hidden">В корзину</span>
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Добавление в корзину">
+                  <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="production">
+        <h2 class="production__heading">Процесс производства</h2>
+        <img class="production__video" src="https://via.placeholder.com/260x150"  width="260" height="150" alt="Видео изготовления корзинки">
+        <button class="production__button-play"><span class="visually-hidden">Запуск видео</span></button>
+        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="production__button" href="">Сделать заказ</a>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__container">
-        <a class="page-footer__logo">
+        <a href="index.html" class="page-footer__logo">
           <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип нашего магазина">
         </a>
         <h2 class="visually-hidden">Наш магазин в социальных сетях</h2>
