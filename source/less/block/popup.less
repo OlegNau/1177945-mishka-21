@@ -1,8 +1,3 @@
-.page__popup-container {
-  background-color: @white;
-  opacity: 0.9;
-}
-
 .popup {
   background-color: @white;
   border-top: 1px solid @popup-color;
@@ -24,12 +19,13 @@
   font-size: 17px;
   line-height: 16px;
   display: inline-block;
-  vertical-align: auto;
+  vertical-align: baseline;
   text-align: center;
   width: 82px;
   padding-top: 18px;
   padding-bottom: 18px;
   border: 2px solid @popup-special-border;
+  text-transform: uppercase;
 }
 
 .popup__button {
@@ -42,4 +38,13 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
+  text-transform: uppercase;
+}
+
+.popup-heading {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: @black;
+  text-transform: uppercase;
 }

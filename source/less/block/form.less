@@ -1,12 +1,13 @@
 .form__name {
   display: inline-block;
-  vertical-align: auto;
+  vertical-align: baseline;
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   color: @light-green;
   position: relative;
   padding-right: 20px;
+  text-transform: uppercase;
 }
 
 
@@ -40,7 +41,7 @@
 }
 
 .form__customer-item {
-  font-size: 19px;
+  font-size: 17px;
   line-height: 18px;
 }
 
@@ -64,11 +65,11 @@
 }
 
 .form__comment-area {
-  font-size: 19px;
+  font-size: 17px;
   line-height: 18px;
 }
 
-.form__comment-area {
+.form__comment-area::placeholder {
   color: @black;
   opacity: 0.3;
 }
@@ -89,7 +90,8 @@
   color: @dark-gray;
   width: 192px;
   display: inline-block;
-  vertical-align: auto;
+  vertical-align: baseline;
   background-color: transparent;
+  text-transform: uppercase;
 }
 
