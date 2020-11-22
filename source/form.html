@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header"></header>
       <a href="index.html" class="page-header__logo">
         <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип интернет-магазина Мишка">
       </a>
@@ -34,11 +35,11 @@
           <ul class="form__radio">
             <li>
               <input class="visually-hidden form__radio-input" type="radio" name="radio" id="interior" value="Аксессуар для интерьера" checked>
-              <label for="interior">Аксессуар для интерьера</label>
+              <label class="form__radio-label" for="interior">Аксессуар для интерьера</label>
             </li>
             <li>
               <input class="visually-hidden form__radio-input" type="radio" name="radio" id="toy" value="Детская игрушка">
-              <label for="toy">Детская игрушка</label>
+              <label class="form__radio-label" for="toy">Детская игрушка</label>
             </li>
           </ul>
         </div>
@@ -48,27 +49,27 @@
           <ul class="form__checkbox-container">
             <li>
               <input class="visually-hidden form__checkbox-input" type="checkbox" name="white" id="white" checked>
-              <label for="white">Белый></label>
+              <label class="form__checkbox-label" for="white">Белый></label>
             </li>
             <li>
               <input class="visually-hidden form__checkbox-input" type="checkbox" name="gray" id="gray" checked>
-              <label for="gray">Серый</label>
+              <label class="form__checkbox-label" for="gray">Серый</label>
             </li>
             <li>
               <input class="visually-hidden form__checkbox-input" type="checkbox" name="tiffani" id="tiffani">
-              <label for="tiffani">"Тиффани"</label>
+              <label class="form__checkbox-label" for="tiffani">"Тиффани"</label>
             </li>
             <li>
               <input class="visually-hidden form__checkbox-input" type="checkbox" name="black" id="black">
-              <label for="black">Черный</label>
+              <label class="form__checkbox-label" for="black">Черный</label>
             </li>
             <li>
               <input class="visually-hidden form__checkbox-input" type="checkbox" name="pink" id="pink">
-              <label for="pink">Розовый</label>
+              <label class="form__checkbox-label" for="pink">Розовый</label>
             </li>
             <li>
               <input class="visually-hidden form__checkbox-input" type="checkbox" name="orange" id="orange">
-              <label for="orange">Оранжевый</label>
+              <label class="form__checkbox-label" for="orange">Оранжевый</label>
             </li>
           </ul>
         </div>
@@ -77,15 +78,15 @@
           <span class="form__name">ФИО</span>
           <ul class="form__customer-name">
             <li>
-              <label for="name">Имя:</label>
+              <label class="form__customer-label" for="name">Имя:</label>
               <input class="form__customer-item" type="text" name="name" id="name" placeholder="Введите ваше имя*">
             </li>
             <li>
-              <label for="surname">Фамилия:</label>
+              <label class="form__customer-label" for="surname">Фамилия:</label>
               <input class="form__customer-item" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
             </li>
             <li>
-              <label for="patronymic">Отчество:</label>
+              <label class="form__customer-label" for="patronymic">Отчество:</label>
               <input class="form__customer-item" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
             </li>
           </ul>
@@ -107,7 +108,7 @@
           <textarea class="form__comment-area" name="comment" id="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
         <div class="form__footer">
-          <span class="">*Поля обязательны для заполнения</span>
+          <span class="form__main-fields">*Поля обязательны для заполнения</span>
           <button class="form__button" type="submit" formaction="https://echo.htmlacademy.ru/">Отправить заказ</button>
         </div>
       </form>
