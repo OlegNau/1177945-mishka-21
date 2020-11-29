@@ -2,6 +2,14 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  padding: 0 50px;
+  width: 768px;
+  }
+  @media (min-width: @desktop-width){
+   width: 1150px;
+  }
 }
 
 .page-navigation__item {
@@ -52,11 +60,11 @@
   padding: 22px 0;
   width: 86px;
   min-height: 79px;
-  background-image: url(../../img/mishka-logo-mobile.svg);
+  background-image: url(../img/mishka-logo-mobile.svg);
   background-repeat: no-repeat;
   background-position: center;
   @media (min-width: @tablet-width) {
-    background-image: url(../../img/mishka-logo-tablet.svg);
+    background-image: url(../img/mishka-logo-tablet.svg);
     width: 113px;
     min-height: 46px;
     margin-top: 22px;
@@ -76,7 +84,7 @@
   border: none;
   top: 0;
   right: 0;
-  background-image: url(../../img/open-menu.svg);
+  background-image: url(../img/open-menu.svg);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -89,7 +97,7 @@
 }
 
 .page-navigation__toggle-close {
-  background-image: url(../../img/menu-close.svg);
+  background-image: url(../img/menu-close.svg);
 }
 
 .page-navigation__changing-elements, .page-navigation__static-elements  {
@@ -155,7 +163,7 @@
     padding: 0;
       &::before {
         content: "";
-        background-image: url(../../img/search.svg);
+        background-image: url(../img/search.svg);
         width: 18px;
         height: 18px;
         position: absolute;
