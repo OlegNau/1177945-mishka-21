@@ -3,6 +3,19 @@
   border-top: 1px solid @popup-color;
   border-bottom: 1px solid @popup-color;
   box-shadow: 10 0 5px 5px @black;
+  margin: 0 auto;
+  padding: 28px 30px 46px;
+  text-align: center;
+  border-top: 1px solid @border-gray;
+  border-bottom: 1px solid @border-gray;
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 566px;
+    height: 336px;
+    padding: 38px 108px 61px;
+    outline: 1px solid @border-gray;
+    border: none;
+  }
 }
 
 .popup__text {
@@ -11,6 +24,17 @@
 }
 .popup__radio {
   list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popup__radio li {
+  margin-right: 7px;
+}
+
+.popup__radio li:last-child {
+  margin-right: 0px;
 }
 
 .popup__label {
@@ -26,6 +50,9 @@
   padding-bottom: 18px;
   border: 2px solid @popup-special-border;
   text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+    width: 112px;
+  }
 }
 
 .popup__button {

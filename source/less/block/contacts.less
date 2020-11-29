@@ -24,6 +24,11 @@
   display: inline-block;
   vertical-align: baseline;
   text-transform: uppercase;
+  grid-area: write;
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .contacts__heading {
@@ -31,5 +36,46 @@
   font-size: 18px;
   line-height: 30px;
   color: @black;
+  grid-area: heading;
 }
 
+.contacts {
+  padding: 0 30px;
+  margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "heading map"
+      "item-box map"
+      "item-box map"
+      "write map";
+
+  }
+}
+
+.contacts__container {
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding: 0 50px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+  }
+}
+
+.contacts__map {
+  grid-area: map;
+  width: 100%;
+  background-image: ;
+}
+
+
+
+.contacts__item-box {
+  grid-area: item-box;
+}

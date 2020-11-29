@@ -3,6 +3,7 @@
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
+  width: 100%;
 }
 
 .categories__item--interior {
@@ -11,4 +12,17 @@
 
 .categories__item--toys {
   background-color: @green;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  @media (min-width: @tablet-width){
+    flex-direction: row;
+    padding: 0 50px;;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+  }
 }

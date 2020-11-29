@@ -2,10 +2,12 @@
   font-weight: bold;
   font-size: 17px;
   color: @black;
+  grid-area: prh;
 }
 
 .production__text {
 font-size: 13px;
+grid-area: pt;
 }
 
 .production__button {
@@ -21,8 +23,36 @@ font-size: 13px;
   display: inline-block;
   vertical-align: baseline;
   text-transform: uppercase;
+  grid-area: pbtn;
+}
+
+.production__video{
+  grid-area: ppl;
 }
 
 .production {
+  position: relative;
   border: 1px solid @border-gray;
+  margin: 0 auto;
+  padding: 0 30px;
+  @media (min-width: @tablet-width) {
+  padding: 0 50px;
+  width: 768px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+    display: grid;
+    grid-template-columns: 683px 1fr;
+    grid-template-areas:
+    "ppl prh"
+    "ppl pt"
+    "ppl pbtn";
+  }
+}
+
+.production__button-play{
+  position: absolute;
 }
