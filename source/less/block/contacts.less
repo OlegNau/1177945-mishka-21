@@ -40,13 +40,8 @@
 }
 
 .contacts {
-  padding: 0 30px;
-  margin: 0 auto;
-  @media (min-width: @tablet-width) {
-    width: 768px;
-  }
   @media (min-width: @desktop-width) {
-    width: 1150px;
+    padding: 0 225px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas:
@@ -54,25 +49,15 @@
       "item-box map"
       "item-box map"
       "write map";
-
-  }
-}
-
-.contacts__container {
-  @media (min-width: @tablet-width) {
-    width: 768px;
-    padding: 0 50px;
-  }
-  @media (min-width: @desktop-width) {
-    width: 1150px;
   }
 }
 
 .contacts__map {
   grid-area: map;
   width: 100%;
-  background-image: ;
 }
+
+
 
 .contacts__item-box {
   grid-area: item-box;
