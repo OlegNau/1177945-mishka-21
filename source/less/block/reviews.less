@@ -44,3 +44,38 @@
   }
 }
 
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+  @media (min-width: @desktop-width) {
+    padding: 0 225px;
+  }
+  }
+
+
+.reviews__text {
+  order: 2;
+}
+
+.reviews__author {
+  order: 3;
+}
+.reviews__author-page {
+  order: 3;
+}
+
+.reviews__switch {
+  order: 4;
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
+}
+
+.reviews__write {
+  order: 5;
+  @media (min-width: @tablet-width) {
+    order: 1;
+    margin-left: auto;
+  }
+}

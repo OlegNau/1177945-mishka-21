@@ -1,5 +1,18 @@
 .products-item {
   border: 1px solid @border-gray;
+  @media (min-width: @tablet-width) {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  }
+  @media (min-width: @desktop-width) {
+  display: block;
+  width: 316px;
+  margin-right: 51px;
+  }
+}
+
+.products-item:last-child {
+  margin-right: 0;
 }
 
 .products-item__name {
@@ -22,5 +35,17 @@
   color: @black;
 }
 
+.products-item__info {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+}
+
+.products-item__price-and-basket {
+  display: flex;
+  justify-content: space-between;
+}
 
 

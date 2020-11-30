@@ -1,2 +1,21 @@
+.page-footer {
+  background-color: @light-gray;
+  margin-top: 39px;
+}
 
+.page-footer__container {
+  padding: 25px 30px 23px;
+  display: grid;
+  @media (min-width: @tablet-width) {
+    padding: 51px 50px 58px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
 

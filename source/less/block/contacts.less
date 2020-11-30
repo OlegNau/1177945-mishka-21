@@ -24,6 +24,11 @@
   display: inline-block;
   vertical-align: baseline;
   text-transform: uppercase;
+  grid-area: write;
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .contacts__heading {
@@ -31,5 +36,29 @@
   font-size: 18px;
   line-height: 30px;
   color: @black;
+  grid-area: heading;
 }
 
+.contacts {
+  @media (min-width: @desktop-width) {
+    padding: 0 225px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "heading map"
+      "item-box map"
+      "item-box map"
+      "write map";
+  }
+}
+
+.contacts__map {
+  grid-area: map;
+  width: 100%;
+}
+
+
+
+.contacts__item-box {
+  grid-area: item-box;
+}
