@@ -1,27 +1,110 @@
 .categories__item {
+  position: relative;
   color: @white;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   width: 100%;
+  height: 103px;
+  padding: 24px 94px 31px 30px;
+  @media (min-width: @tablet-width) {
+    height: 119px;
+    padding: 26px 94px 34px 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 25px 94px 34px 37px;
+  }
 }
 
 .categories__item--interior {
   background-color: @light-green;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 62px;
+    background-image: url(../img/interior.svg);
+    right: 36px;
+    top: 23px;
+    display: block;
+  }
+  @media (min-width: @tablet-width) {
+    &::after {
+      top: 30px;
+  }
+}
 }
 
 .categories__item--toys {
   background-color: @green;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    background-image: url(../img/toy-svg.svg);
+    right: 27px;
+    top: 21px;
+    display: block;
+  }
+  @media (min-width: @tablet-width) {
+    &::after {
+      top: 31px;
+      right: 33px;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    &::after {
+      right: 35px;
+  }
+ }
 }
 
 .categories {
+  position: relative;
+  background-color: @header-background;
+  @media (min-width: @tablet-width) {
+    &::before {
+        content: "";
+        background-image: url(../img/zigzag-fill-desktop.svg);
+        width: 100%;
+        height: 24px;
+        position: absolute;
+        display: block;
+        z-index: 3;
+        bottom: -12px;
+        left: 50%;
+      }
+      &::after {
+        content: "";
+        background-image: url(../img/zigzag-fill-desktop.svg);
+        transform: scaleX(-1);
+        width: 100%;
+        height: 24px;
+        position: absolute;
+        display: block;
+        z-index: 3;
+        bottom: -12px;
+        right: 50%;
+      }
+    }
+}
+
+.categories__container {
+
   padding: 0;
   display: flex;
   flex-direction: column;
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     padding: 0 50px;
     flex-direction: row;
   }
   @media (min-width: @desktop-width) {
+    width: 1150px;
+    margin: 0 auto;
   }
 }
+
+

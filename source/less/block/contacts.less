@@ -1,14 +1,31 @@
 .contacts__item {
+  vertical-align: baseline;
+  display: inline-block;
+  padding-top: 10px;
+  width: 29%;
   font-size: 14px;
   line-height: 30px;
   color: @dark-gray;
+  margin-right: auto;
 }
 
 .contacts__item-information {
+  display: block;
+  width: 71%;
   font-size: 14px;
   line-height: 30px;
   color: @dark-gray;
   font-style: normal;
+  padding-top: 0px;
+  margin: 0;
+}
+
+.contacts__item--link-position {
+  margin-top: 4px;
+}
+
+.contacts__item--adress-position {
+  margin-top: 4px;
 }
 
 .contacts__write-to-us {
@@ -16,13 +33,13 @@
   font-size: 18px;
   line-height: 20px;
   border: 2px solid @dark-gray;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   text-align: center;
   color: @dark-gray;
   width: 260px;
-  display: inline-block;
-  vertical-align: baseline;
+  display: block;
+  margin: 0 auto;
   text-transform: uppercase;
   grid-area: write;
   @media (min-width: @tablet-width) {
@@ -40,6 +57,7 @@
 }
 
 .contacts {
+  margin-top: 38px;
   @media (min-width: @desktop-width) {
     padding: 0 225px;
     display: grid;
@@ -55,10 +73,30 @@
 .contacts__map {
   grid-area: map;
   width: 100%;
+  margin-top: 62px;
+  margin-bottom: 36px;
+  vertical-align: bottom;
+  position: relative;
+}
+.contacts__map iframe {
+  width: 100%;
+  z-index: 2;
 }
 
+.contacts__map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
+.contacts__box {
+  margin-top: 24px;
+  padding-left: 2px;
+}
 
 .contacts__item-box {
+  display: flex;
+  margin-bottom: 20px;
   grid-area: item-box;
 }

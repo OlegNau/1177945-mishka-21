@@ -3,12 +3,19 @@
   font-size: 27px;
   line-height: 30px;
   color: @black;
+  margin: 0 auto;
   text-align: center;
+  padding: 71px 30px 120px;
   @media (min-width: @tablet-width) {
-    padding: 125px;
+    font-size: 43px;
+    line-height: 50px;
+    padding: 90px 7px 372px 0px;
   }
   @media (min-width: @desktop-width) {
-    padding: 175px;
+    padding: 76px 175px 355px;
+    font-size: 53px;
+    line-height: 57px;
+
   }
 }
 
@@ -17,11 +24,26 @@
   font-size: 25px;
   line-height: 30px;
   color: @black;
+  margin: 0;
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .page-main__main-heading-container {
-  padding: 0 30px;
+  background-color: @header-background;
+}
+
+.page-main__heading--week-product {
+  margin: 0;
   @media (min-width: @tablet-width) {
-    padding: 0 50px;
+  font-size: 43px;
+  line-height: 50px;
+  }
+  @media (min-width: @desktop-width) {
+  text-align: start;
+  margin: 0 auto 0 0;
+  z-index: 2;
   }
 }
