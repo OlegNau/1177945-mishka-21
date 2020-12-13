@@ -1,6 +1,5 @@
 .page-footer {
   background-color: @light-gray;
-  margin-top: 39px;
 }
 
 .page-footer__container {
@@ -8,7 +7,7 @@
   display: grid;
   @media (min-width: @tablet-width) {
     padding: 51px 50px 58px;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
   }
 }
 
@@ -16,6 +15,11 @@
   display: none;
   @media (min-width: @tablet-width) {
     display: block;
+    width: 101px;
+    margin-right: 122px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 27.9%;
   }
 }
 

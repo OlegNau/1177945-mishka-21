@@ -34,6 +34,7 @@
     &::after {
       top: 30px;
   }
+
 }
 }
 
@@ -68,26 +69,21 @@
   @media (min-width: @tablet-width) {
     &::before {
         content: "";
-        background-image: url(../img/zigzag-fill-desktop.svg);
+        background-image: url(../img/zigzag-fill-tablet.svg);
         width: 100%;
         height: 24px;
         position: absolute;
         display: block;
         z-index: 3;
         bottom: -12px;
-        left: 50%;
+        background-position: center;
       }
-      &::after {
-        content: "";
+    }
+    @media (min-width: @desktop-width) {
+      &::before {
         background-image: url(../img/zigzag-fill-desktop.svg);
-        transform: scaleX(-1);
-        width: 100%;
-        height: 24px;
-        position: absolute;
-        display: block;
-        z-index: 3;
-        bottom: -12px;
-        right: 50%;
+        height: 34px;
+        bottom: -17px;
       }
     }
 }
