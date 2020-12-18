@@ -24,7 +24,7 @@
     font-size: 15px;
     line-height: 24px;
   }
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     display: block;
   }
 }
@@ -39,14 +39,10 @@
     display: grid;
     grid-template-columns: 20% 20% 20% 10% 10% 20%;
     grid-template-rows: 89px 1fr;
-    grid-template-areas:
-    "log log st st st st"
-    "mai mai mai del del del"
+    grid-template-areas: "log log st st st st" "mai mai mai del del del"
   }
   @media (min-width: @desktop-width) {
-    grid-template-areas:
-    "mai mai log  st st  st"
-    "ch ch ch ch del del"
+    grid-template-areas: "mai mai log  st st  st" "ch ch ch ch del del"
   }
 }
 
@@ -75,11 +71,17 @@
     width: 149px;
     height: 72px;
     margin: 9px auto;
-    justify-items: center;;
+    justify-items: center;
   }
 }
 
+.page-navigation__logo:hover {
+  opacity: 0.6;
+}
 
+.page-navigation__logo:active {
+  opacity: 0.3;
+}
 
 .page-navigation__toggle {
   position: absolute;
@@ -91,7 +93,6 @@
   background-image: url(../img/open-menu.svg);
   background-repeat: no-repeat;
   background-position: center;
-
   @media (min-width: @desktop-width) {
     display: none;
   }
@@ -108,7 +109,8 @@
   display: none;
 }
 
-.page-navigation__changing-elements, .page-navigation__static-elements  {
+.page-navigation__changing-elements,
+.page-navigation__static-elements {
   @media (min-width: @tablet-width) {
     display: flex;
   }
@@ -116,16 +118,15 @@
 
 .page-navigation__static-elements {
   order: 3;
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     order: 2;
     grid-area: st;
     justify-self: end;
   }
-
 }
 
 .page-navigation__changing-elements {
-    @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     grid-area: ch;
     display: flex;
     flex-wrap: wrap;
@@ -134,8 +135,7 @@
     line-height: 24px;
     padding-top: 19px;
     padding-bottom: 19px;
-
-    }
+  }
 }
 
 .page-navigation__item {
@@ -150,6 +150,24 @@
   }
 }
 
+.page-navigation__item:hover {
+  opacity: 0.6;
+}
+
+.page-navigation__item:active {
+  opacity: 0.3;
+}
+
+.page-navigation__basket-container:hover svg {
+  fill: @light-green;
+  opacity: 1;
+}
+
+.page-navigation__basket-container:active svg {
+  fill: @light-green;
+  opacity: 0.3;
+}
+
 .page-navigation__item span {
   margin: 0 auto;
   text-align: start;
@@ -157,9 +175,9 @@
   display: block;
   width: 260px;
   @media (min-width: @tablet-width) {
-  margin: 0;
-  padding: 0;
-  width: auto;
+    margin: 0;
+    padding: 0;
+    width: auto;
   }
 }
 
@@ -177,48 +195,56 @@
   margin-right: 0;
 }
 
-
-@media (min-width: @tablet-width) {
-  .page-navigation__item-search {
+.page-navigation__item-search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+    @media (min-width: @tablet-width) {
     width: 85px;
     height: 89px;
     border-right: 1px solid @border-gray;
     border-left: 1px solid @border-gray;
-    display: block;
+    display: flex;
     position: relative;
     padding: 0;
     padding-top: 34px;
     text-align: end;
     margin: 0;
-      &::before {
-        content: "";
-        background-image: url(../img/search.svg);
-        width: 18px;
-        height: 18px;
-        position: absolute;
-        left: 40%;
-        top: 36px;
-      }
   }
 }
 
+.page-navigation__item-search svg {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 20px;
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+}
+}
+
+.page-navigation__item-search:hover svg {
+  fill: @light-green;
+  opacity: 1;
+}
+
+.page-navigation__item-search:active svg {
+  fill: @light-green;
+  opacity: 0.3;
+}
+
+.page-navigation__search {
+  margin: 0;
+}
+
 .page-navigation__item-search span {
-  position: relative;
-  &::before {
-    content: "";
-    background-image: url(../img/search.svg);
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    left: 1px;
-    top: 2px;
-  }
+  display: inline-block;
+  vertical-align: baseline;
+  margin: 0;
+  padding-left: 27px;
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
-
-
 
 .page-navigation__item-basket {
   @media (min-width: @tablet-width) {
@@ -226,17 +252,17 @@
     margin: 0;
     margin-left: 31px;
     padding-top: 34px;
-}
-@media (min-width: @desktop-width) {
-  margin-left: 31px;
-}
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 31px;
+  }
 }
 
-.page-navigation__item-basket span{
+.page-navigation__item-basket span {
   padding: 0;
 }
 
-.page-navigation__basket-container svg{
+.page-navigation__basket-container svg {
   margin-right: 21px;
   @media (min-width: @tablet-width) {
     margin-right: 26px;
@@ -252,10 +278,8 @@
   order: 2;
 }
 
-
-
-  .page-navigation__main-elements {
-    @media (min-width: @tablet-width) {
+.page-navigation__main-elements {
+  @media (min-width: @tablet-width) {
     grid-area: mai;
     display: flex;
     flex-wrap: wrap;
@@ -268,25 +292,25 @@
     line-height: 24px;
     padding-top: 0px;
   }
-  }
+}
 
-  .page-navigation__main-elements a {
-    @media (min-width: @tablet-width) {
+.page-navigation__main-elements a {
+  @media (min-width: @tablet-width) {
     margin-bottom: 20px;
     margin-right: 10px;
     width: 157px;
-    }
-    @media (min-width: @desktop-width) {
-      margin-bottom: 0px;
-      width: 183px;
-    }
   }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0px;
+    width: 183px;
+  }
+}
 
-  .page-navigation__main-elements .page-navigation__item:first-child {
-    @media (min-width: @desktop-width) {
-     padding-top: 34px;
-     margin-right: 38px;
-     &::before {
+.page-navigation__main-elements .page-navigation__item:first-child {
+  @media (min-width: @desktop-width) {
+    padding-top: 34px;
+    margin-right: 38px;
+    &::before {
       content: "";
       background-color: @black;
       opacity: 0.1;
@@ -296,13 +320,11 @@
       left: 234px;
       top: 0;
     }
-    }
   }
+}
 
-  .page-navigation__main-elements .page-navigation__item:last-child {
-    @media (min-width: @desktop-width) {
-      padding-top: 34px;
-    }
+.page-navigation__main-elements .page-navigation__item:last-child {
+  @media (min-width: @desktop-width) {
+    padding-top: 34px;
   }
-
-
+}

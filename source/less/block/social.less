@@ -3,20 +3,32 @@
   border-bottom: 1px solid @border-footer;
   display: flex;
   margin: 0 auto;
-  padding: 0 0 20px 0;
+  padding: 0;
   width: 100%;
   justify-content: center;
+  padding-bottom: 20px;
   @media (min-width: @tablet-width) {
+    padding-bottom: 0;
     border: none;
     margin: 3px 0 0;
     width: 140px;
   }
 }
 
+.social__item:hover svg {
+  fill: @icon-green;
+}
+
+.social__item:active svg {
+  fill: @icon-green;
+  opacity: 0.3;
+}
+
+
 .social__element {
   margin-right: 41px;
   @media (min-width: @tablet-width) {
-  margin-right: 40px;
+    margin-right: 40px;
   }
 }
 

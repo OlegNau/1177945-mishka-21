@@ -1,7 +1,7 @@
 .contacts__item {
   vertical-align: baseline;
   display: inline-block;
-  padding-top: 10px;
+  padding-top: 5px;
   width: 27%;
   font-size: 14px;
   line-height: 30px;
@@ -10,8 +10,8 @@
   @media (min-width: @tablet-width) {
     font-size: 17px;
     width: 22%;
-    margin-top: 3px;
-    }
+    margin-top: 8px;
+  }
   @media (min-width: @desktop-width) {
     margin-right: 10px;
     padding-top: 9px;
@@ -31,13 +31,13 @@
   @media (min-width: @tablet-width) {
     font-size: 17px;
     margin-top: 13px;
-    }
+  }
   @media (min-width: @desktop-width) {
     margin-top: 9px;
   }
 }
 
-.contacts__item--link-position {
+.contacts__item-information--link-position {
   position: relative;
   &::after {
     content: "";
@@ -45,18 +45,29 @@
     width: 100%;
     height: 1px;
     left: 0;
-    bottom: 9px;
+    bottom: 4px;
     background-color: @special-green;
   }
   @media (min-width: @tablet-width) {
     &::after {
-    bottom: 60px;
+      bottom: 60px;
     }
   }
   @media (min-width: @desktop-width) {
     &::after {
-    bottom: -5px;
+      bottom: -5px;
     }
+  }
+}
+
+.contacts__item-information--link-position:hover {
+  color: @icon-green;
+}
+
+.contacts__item-information--link-position:active {
+  color: @icon-green;
+  &::after {
+    opacity: 0.1;
   }
 }
 
@@ -81,13 +92,27 @@
     line-height: 20px;
   }
   @media (min-width: @desktop-width) {
-    margin: -89px 0 0;
-
+    margin: 65px 0 37px;
   }
+}
+
+.contacts__write-to-us:hover {
+  background-color: @dark-gray;
+  color: @white;
+}
+
+.contacts__write-to-us:active  {
+  background-color: @dark-gray;
+  color: @white-opacity;
 }
 
 .contacts__bottom-container {
   padding: 0;
+  @media (min-width: @desktop-width) {
+  width: 415px;
+    padding: 0px;
+    margin: 0;
+  }
 }
 
 .contacts__heading {
@@ -101,19 +126,19 @@
   }
   @media (min-width: @desktop-width) {
     font-size: 53px;
-line-height: 57px;
-margin-top: 161px;
-margin-bottom: 16px;
+    line-height: 57px;
+    margin-top: 141px;
+    margin-bottom: 16px;
   }
 }
 
 .contacts {
+  position: relative;
   margin-top: 38px;
   margin-bottom: 39px;
-
   @media (min-width: @tablet-width) {
-  margin-top: 80px;
-  margin-bottom: 57px;
+    margin-top: 80px;
+    margin-bottom: 57px;
   }
   @media (min-width: @desktop-width) {
     padding: 0 50px 0px 225px;
@@ -131,21 +156,23 @@ margin-bottom: 16px;
   vertical-align: bottom;
   position: relative;
   @media (min-width: @tablet-width) {
-    margin-top: 28px;
+    margin-top: 23px;
     height: 467px;
     margin-bottom: 45px;
   }
   @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 40px;
     width: 527px;
     height: 457px;
     align-self: flex-end;
-    margin-top: -348px;
   }
 }
 
 .contacts__map iframe {
   width: 100%;
   z-index: 2;
+  border: 0;
 }
 
 .contacts__map img {
@@ -157,13 +184,11 @@ margin-bottom: 16px;
 
 .contacts__box {
   margin-top: 24px;
-  padding-left: 2px;
   @media (min-width: @tablet-width) {
-  display: flex;
-  padding-left: 0;
-  margin-top: 26px;
+    display: flex;
+    margin-top: 26px;
   }
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
     width: 300px;
@@ -174,36 +199,37 @@ margin-bottom: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  margin-bottom: 20px;
-
+  margin-bottom: 25px;
   @media (min-width: @tablet-width) {
     width: 50%;
-    }
-    @media (min-width: @desktop-width) {
-      width: 300px;
-      grid-area: item-box;
-      margin-bottom: 20px;
-    }
+  }
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    grid-area: item-box;
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__container {
   position: relative;
   @media (min-width: @tablet-width) {
     &::before {
-    content: "";
-    position: absolute;
-    right: 53px;
-    top: -23px;
-    background-image: url(../img/flag.svg);
-    width: 47px;
-    height: 81px;
+      content: "";
+      position: absolute;
+      right: 53px;
+      top: -23px;
+      background-image: url(../img/flag.svg);
+      width: 47px;
+      height: 81px;
     }
   }
   @media (min-width: @desktop-width) {
+    width: 415px;
     padding: 0px;
+    margin: 0;
     &::before {
       left: -112px;
-      top: 144px;
+      top: 124px;
     }
   }
 }

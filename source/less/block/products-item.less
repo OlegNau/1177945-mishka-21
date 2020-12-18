@@ -3,13 +3,13 @@
   margin-bottom: 30px;
   @media (min-width: @tablet-width) {
     margin-bottom: 52px;
-  display: grid;
-  grid-template-columns: 334px 1fr;
+    display: grid;
+    grid-template-columns: 334px 1fr;
   }
   @media (min-width: @desktop-width) {
-  display: block;
-  width: 316px;
-  margin-right: 51px;
+    display: block;
+    width: 316px;
+    margin-right: 51px;
   }
 }
 
@@ -20,12 +20,21 @@
 .products-item__name {
   font-weight: bold;
   font-size: 17px;
+  line-height: 24px;
   color: @black;
   display: block;
   @media (min-width: @tablet-width) {
-  font-size: 20px;
-  line-height: 24px;
+    font-size: 20px;
+    line-height: 24px;
   }
+}
+
+.products-item__name:hover {
+  opacity: 0.6;
+}
+
+.products-item__name:active {
+  opacity: 0.3;
 }
 
 .products-item__properties {
@@ -36,42 +45,50 @@
   padding-bottom: 17px;
   @media (min-width: @tablet-width) {
     margin-top: 7px;
-  font-size: 15px;
-  line-height: 30px;
+    font-size: 15px;
+    line-height: 30px;
   }
   @media (min-width: @desktop-width) {
-  margin-top:  5px;
-  padding-bottom: 0px;
-}
+    margin-top: 5px;
+    padding-bottom: 0px;
+  }
 }
 
 .products-item__price {
   font-weight: bold;
   color: @black;
   @media (min-width: @tablet-width) {
-  font-size: 17px;
-  line-height: 24px;
+    font-size: 17px;
+    line-height: 24px;
   }
 }
 
 .products-item__info {
-  padding: 29px 25px 24px;
+  padding: 29px 25px 24px 27px;
   @media (min-width: @tablet-width) {
     padding: 27px 33px 23px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    }
-  @media (min-width: @desktop-width) {
-  padding: 0px 27px 21px;
   }
+  @media (min-width: @desktop-width) {
+    padding: 0px 27px 21px;
+  }
+}
+
+.products-item__info:hover {
+  box-shadow: 0 6px 10px 0 @black-opacity;
+}
+
+.products-item__info:active {
+  box-shadow: 0 3px 5px 0 @black-opacity;
 }
 
 .products-item__name-and-properties {
   @media (min-width: @desktop-width) {
     min-height: 123px;
     padding-top: 27px;
-    }
+  }
 }
 
 .products-item__price-and-basket {
@@ -93,7 +110,6 @@
   }
 }
 
-
 .products-item__image-link img {
   vertical-align: bottom;
   @media (min-width: @tablet-width) {
@@ -104,7 +120,6 @@
     width: 316px;
     height: 462px;
   }
-
 }
 
 .products-item__image-link {
@@ -115,4 +130,14 @@
 .products-item__basket {
   display: block;
   margin-right: 3px;
+}
+
+.products-item__basket:hover svg {
+  fill: @light-green;
+  opacity: 1;
+}
+
+.products-item__basket:active svg {
+  fill: @light-green;
+  opacity: 0.3;
 }
