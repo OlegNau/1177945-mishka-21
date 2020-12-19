@@ -38,7 +38,7 @@
   background-color: @header-background;
 }
 
-.page-main__heading--week-product {
+.page-main__section-heading--week-product {
   margin: 0;
   @media (min-width: @tablet-width) {
     font-size: 43px;
@@ -89,5 +89,35 @@
     height: 23px;
     background-repeat: no-repeat;
     background-image: url(../img/zigzag-line-desktop-max.svg);
+  }
+}
+
+.page-main__week-product-container {
+  position: relative;
+  padding-bottom: 42px;
+  @media (min-width: @tablet-width) {
+    padding-bottom: 69px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-bottom: 96px;
+  }
+}
+
+
+.page-main__week-product-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-image: url(../img/zigzag-line-mobile.svg);
+  background-position: center;
+  @media (min-width: @tablet-width) {
+    background-image: url(../img/zigzag-line-tablet.svg);
+    height: 17px;
+  }
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
