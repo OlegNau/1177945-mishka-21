@@ -1,6 +1,5 @@
 .page-footer {
   background-color: @light-gray;
-  margin-top: 39px;
 }
 
 .page-footer__container {
@@ -8,7 +7,7 @@
   display: grid;
   @media (min-width: @tablet-width) {
     padding: 51px 50px 58px;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
   }
 }
 
@@ -19,3 +18,11 @@
   }
 }
 
+.page-footer__logo:hover svg {
+  fill: @icon-green;
+}
+
+.page-footer__logo:active svg {
+  fill: @icon-green;
+  opacity: 0.3;
+}

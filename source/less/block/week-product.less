@@ -1,16 +1,26 @@
 .week-product {
+  position: relative;
+  margin-top: 31px;
   @media (min-width: @tablet-width) {
+    margin-top: 12px;
     padding: 40px 50px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: relative;
   }
-}
-
-.page-main__heading--week-product {
   @media (min-width: @desktop-width) {
-    padding-left: 175px;
+    margin-top: 56px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -96px;
+      left: 50px;
+      width: 1050px;
+      height: 23px;
+      background-image: url(../img/zigzag-line-desktop-max.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
 
@@ -20,11 +30,36 @@
   line-height: 20px;
   color: @light-green;
   text-transform: uppercase;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-top: 3.5px;
+  margin-bottom: 2px;
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 17px;
+    margin-right: 19px;
+    margin-top: 5.5px;
+    width: 13.2%;
+    text-align: center;
+  }
+  @media (min-width: @desktop-width) {
+    order: -1;
+    width: 100px;
+    margin-left: 32px;
+    margin-right: 43px;
+    margin-top: 44px;
+  }
 }
 
 .week-product__item {
   border-bottom: 1px solid @border-gray;
   line-height: 20px;
+  padding-bottom: 11px;
+  margin-bottom: 8px;
+  @media (min-width: @desktop-width) {
+    padding-bottom: 14px;
+    margin-bottom: 5px;
+  }
 }
 
 .week-product__price {
@@ -33,13 +68,18 @@
   font-size: 17px;
   line-height: 24px;
   text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
   @media (min-width: @tablet-width) {
-    width: 50%;
     margin-right: 50%;
-    margin-top: 57px;
+    margin-top: 36px;
+    width: 43.71%;
+    font-size: 20px;
+    line-height: 24px;
   }
   @media (min-width: @desktop-width) {
     padding-left: 175px;
+    margin-top: 90px;
   }
 }
 
@@ -49,32 +89,54 @@
   line-height: 20px;
   color: @dark-gray;
   border: 2px solid @dark-gray;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 14px;
   text-align: center;
   color: @dark-gray;
   width: 260px;
-  display: inline-block;
-  vertical-align: baseline;
+  display: block;
+  margin: 0 auto;
   text-transform: uppercase;
   @media (min-width: @tablet-width) {
-    width: 50%;
-    margin-right: 50%;
-    margin-top: 33px;
-    width: 292px;
+    width: 43.71%;
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 6px;
+    font-size: 17px;
   }
   @media (min-width: @desktop-width) {
     margin-left: 175px;
+    width: 292px;
+    margin-top: 7px;
   }
 }
 
+.week-product__to-order:hover {
+  background-color: @dark-gray;
+  color: @white;
+}
+
+.week-product__to-order:active {
+  background-color: @dark-gray;
+  color: @white-opacity;
+}
+
 .week-product__image {
+  display: block;
+  margin: 29px auto 0;
   @media (min-width: @tablet-width) {
+    margin-top: 15px;
     position: absolute;
     right: 50px;
-    top: 100px;
+    top: 124px;
     width: 334px;
     height: 404px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 525px;
+    height: 636px;
+    z-index: 1;
+    top: 0;
   }
 }
 
@@ -82,7 +144,7 @@
   list-style: none;
   padding: 0;
   @media (min-width: @tablet-width) {
-    width: 50%;
+    width: 43.71%;
     margin-right: 50%;
   }
   @media (min-width: @desktop-width) {
@@ -93,15 +155,32 @@
 .week-product__item-argument {
   display: inline-block;
   vertical-align: baseline;
-  width: 37.45%;
+  width: 36.2%;
+  padding-right: 5px;
+  @media (min-width: @tablet-width) {
+    width: 32%;
+    @media (min-width: @desktop-width) {
+      width: 33%;
+    }
+  }
 }
 
 .week-product__text {
+  margin-bottom: 28px;
   @media (min-width: @tablet-width) {
+    margin-top: 37px;
+    margin-bottom: 33px;
     width: 50%;
     margin-right: 50%;
+    font-size: 17px;
+    line-height: 30px;
+    width: 43.71%;
+    max-width: 382px;
   }
   @media (min-width: @desktop-width) {
     padding-left: 175px;
+    margin-top: 35px;
+    margin-bottom: 45px;
+    max-width: none;
   }
 }
