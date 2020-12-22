@@ -155,10 +155,11 @@
   margin-bottom: 36px;
   vertical-align: bottom;
   position: relative;
+  padding-bottom: 0;
   background-color: @light-gray;
   @media (min-width: @tablet-width) {
     margin-top: 23px;
-    height: 467px;
+    height: 457px;
     margin-bottom: 45px;
   }
   @media (min-width: @desktop-width) {
@@ -171,9 +172,14 @@
 }
 
 .contacts__map iframe {
+  vertical-align: bottom;
+  display: inline-block;
   width: 100%;
   z-index: 2;
   border: 0;
+  @media (min-width: @tablet-width) {
+  height: 457px;
+  }
 }
 
 .contacts__map img {
