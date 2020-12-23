@@ -1,4 +1,10 @@
 .popup {
+  z-index: 6;
+  background-color: @white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
   background-color: @white;
   border-top: 1px solid @popup-color;
   border-bottom: 1px solid @popup-color;
@@ -8,6 +14,8 @@
   text-align: center;
   border-top: 1px solid @border-gray;
   border-bottom: 1px solid @border-gray;
+  display: block;
+  opacity: 1;
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     width: 566px;
@@ -28,6 +36,7 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .popup__radio li {
