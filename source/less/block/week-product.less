@@ -1,6 +1,7 @@
 .week-product {
   position: relative;
   margin-top: 31px;
+
   @media (min-width: @tablet-width) {
     margin-top: 12px;
     padding: 40px 50px 0;
@@ -8,8 +9,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 56px;
+
     &::after {
       content: "";
       position: absolute;
@@ -17,7 +20,7 @@
       left: 50px;
       width: 1050px;
       height: 23px;
-      background-image: url(../img/zigzag-line-desktop-max.svg);
+      background-image: url("../img/zigzag-line-desktop-max.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -34,6 +37,7 @@
   vertical-align: baseline;
   margin-top: 3.5px;
   margin-bottom: 2px;
+
   @media (min-width: @tablet-width) {
     font-size: 17px;
     line-height: 17px;
@@ -42,6 +46,7 @@
     width: 13.2%;
     text-align: center;
   }
+
   @media (min-width: @desktop-width) {
     order: -1;
     width: 100px;
@@ -56,6 +61,7 @@
   line-height: 20px;
   padding-bottom: 11px;
   margin-bottom: 8px;
+
   @media (min-width: @desktop-width) {
     padding-bottom: 14px;
     margin-bottom: 5px;
@@ -70,6 +76,7 @@
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
+
   @media (min-width: @tablet-width) {
     margin-right: 50%;
     margin-top: 36px;
@@ -77,6 +84,7 @@
     font-size: 20px;
     line-height: 24px;
   }
+
   @media (min-width: @desktop-width) {
     padding-left: 175px;
     margin-top: 90px;
@@ -87,7 +95,6 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-  color: @dark-gray;
   border: 2px solid @dark-gray;
   padding-top: 15px;
   padding-bottom: 14px;
@@ -97,6 +104,7 @@
   display: block;
   margin: 0 auto;
   text-transform: uppercase;
+
   @media (min-width: @tablet-width) {
     width: 43.71%;
     margin-right: auto;
@@ -104,6 +112,7 @@
     margin-top: 6px;
     font-size: 17px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 175px;
     width: 292px;
@@ -125,6 +134,7 @@
   background-color: @light-gray;
   display: block;
   margin: 29px auto 0;
+
   @media (min-width: @tablet-width) {
     margin-top: 15px;
     position: absolute;
@@ -133,6 +143,7 @@
     width: 334px;
     height: 404px;
   }
+
   @media (min-width: @desktop-width) {
     width: 525px;
     height: 636px;
@@ -144,10 +155,12 @@
 .week-product__properties {
   list-style: none;
   padding: 0;
+
   @media (min-width: @tablet-width) {
     width: 43.71%;
     margin-right: 50%;
   }
+
   @media (min-width: @desktop-width) {
     padding-left: 175px;
   }
@@ -158,26 +171,29 @@
   vertical-align: baseline;
   width: 36.2%;
   padding-right: 5px;
+
   @media (min-width: @tablet-width) {
     width: 32%;
-    @media (min-width: @desktop-width) {
-      width: 33%;
-    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 33%;
   }
 }
 
 .week-product__text {
   margin-bottom: 28px;
+
   @media (min-width: @tablet-width) {
     margin-top: 37px;
     margin-bottom: 33px;
-    width: 50%;
     margin-right: 50%;
     font-size: 17px;
     line-height: 30px;
     width: 43.71%;
     max-width: 382px;
   }
+
   @media (min-width: @desktop-width) {
     padding-left: 175px;
     margin-top: 35px;

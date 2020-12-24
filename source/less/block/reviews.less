@@ -3,10 +3,12 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
   }
+
   @media (min-width: @desktop-width) {
     font-size: 17px;
   }
@@ -19,27 +21,12 @@
   margin-top: 3px;
   display: inline-block;
   vertical-align: baseline;
+
   @media (min-width: @tablet-width) {
     font-size: 17px;
     line-height: 30px;
     margin-top: 5px;
   }
-}
-
-.reviews__write {
-  display: inline-block;
-  vertical-align: baseline;
-  color: @black;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-  border: 2px solid @dark-gray;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  text-align: center;
-  color: @dark-gray;
-  width: 260px;
-  text-transform: uppercase;
 }
 
 .reviews__write:hover {
@@ -53,7 +40,6 @@
 }
 
 .reviews__switch {
-  width: 260px;
   border: 1px solid @border-gray;
   position: relative;
   display: flex;
@@ -62,7 +48,8 @@
   width: 260px;
   margin: 29px auto;
   justify-content: space-between;
-  &:before {
+
+  &::before {
     width: 1px;
     content: "";
     height: 100%;
@@ -73,6 +60,7 @@
     display: block;
     z-index: 2;
   }
+
   @media (min-width: @tablet-width) {
     margin-left: auto;
     margin-right: 19px;
@@ -80,10 +68,12 @@
     width: 137px;
     justify-content: space-between;
     margin-top: 5px;
+
     &::before {
       display: none;
     }
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 3px;
   }
@@ -95,24 +85,28 @@
   margin-bottom: 35px;
   margin-top: 37px;
   background-color: @white;
+
   @media (min-width: @tablet-width) {
     margin-top: 32px;
     padding-top: 79px;
     padding-bottom: 19px;
     flex-direction: row;
-    background-image: url(../img/review-tablet.jpg);
+    background-image: url("../img/review-tablet.jpg");
     background-repeat: no-repeat;
     background-position: left;
+
     @media (min-resolution: 2dppx) {
-      background-color: url(../img/review-tablet@2x.jpg) ;
+      background-color: url("../img/review-tablet@2x.jpg");
     }
   }
+
   @media (min-width: @desktop-width) {
     width: auto;
-    padding: 79px 0px 73px 175px;
-    background-color: url(../img/review-desktop.jpg) ;
+    padding: 79px 0 73px 175px;
+    background-color: url("../img/review-desktop.jpg");
+
     @media (min-resolution: 2dppx) {
-      background-color: url(../img/review-desktop@2x.jpg) ;
+      background-color: url("../img/review-desktop@2x.jpg");
     }
   }
 }
@@ -122,12 +116,14 @@
   margin-top: 14px;
   margin-bottom: 34px;
   order: 2;
+
   @media (min-width: @tablet-width) {
     margin-top: 38px;
     margin-bottom: 61px;
     font-size: 17px;
     line-height: 30px;
   }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 44px;
   }
@@ -139,16 +135,22 @@
   }
 }
 
-.reviews__author-page {
-  margin-top: 3px;
-}
-
 .reviews__write {
+  display: inline-block;
+  vertical-align: baseline;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  border: 2px solid @dark-gray;
+  text-align: center;
+  color: @dark-gray;
+  text-transform: uppercase;
   width: 100%;
   margin: 9px auto 0;
   padding-top: 14px;
   padding-bottom: 14px;
   order: 5;
+
   @media (min-width: @tablet-width) {
     order: 1;
     width: 175px;
@@ -159,6 +161,7 @@
     font-size: 17px;
     line-height: 20px;
   }
+
   @media (min-width: @desktop-width) {
     padding-top: 14px;
     padding-bottom: 12px;

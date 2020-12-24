@@ -5,7 +5,6 @@
   top: 50%;
   transform: translate(-50%, -50%);
   position: fixed;
-  background-color: @white;
   border-top: 1px solid @popup-color;
   border-bottom: 1px solid @popup-color;
   box-shadow: 0 5px 10px 0 @color-shadow;
@@ -13,6 +12,7 @@
   padding: 28px 30px 46px;
   text-align: center;
   display: block;
+
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     width: 566px;
@@ -26,6 +26,7 @@
 .popup__text {
   line-height: 30px;
   text-align: center;
+
   @media (min-width: @tablet-width) {
     font-size: 17px;
   }
@@ -37,9 +38,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   @media (min-width: @tablet-width) {
-  margin-top: 18px;
-  margin-bottom: 28px;
+    margin-top: 18px;
+    margin-bottom: 28px;
   }
 }
 
@@ -48,7 +50,7 @@
 }
 
 .popup__radio li:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .popup__label {
@@ -64,12 +66,13 @@
   padding-bottom: 18px;
   border: 2px solid @popup-special-border;
   text-transform: uppercase;
+
   @media (min-width: @tablet-width) {
     width: 112px;
   }
 }
 
-.popup__input:checked+.popup__label {
+.popup__input:checked + .popup__label {
   border: 2px solid @special-green;
 }
 
@@ -77,7 +80,7 @@
   border: 2px solid @popup-special-border-hover;
 }
 
-.popup__input:checked:hover+.popup__label {
+.popup__input:checked:hover + .popup__label {
   border: 2px solid @special-green;
 }
 
@@ -92,6 +95,7 @@
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
+
   @media (min-width: @tablet-width) {
     width: 350px;
   }
@@ -113,10 +117,11 @@
   color: @black;
   margin: 0;
   text-transform: uppercase;
+
   @media (min-width: @tablet-width) {
-  font-size: 30px;
-  line-height: 57px;
-  margin-bottom: 12px;
+    font-size: 30px;
+    line-height: 57px;
+    margin-bottom: 12px;
   }
 }
 
