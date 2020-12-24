@@ -186,9 +186,9 @@
         </div>
       </div>
     </main>
-    <footer class="page-footer ">
+    <footer class="page-footer">
       <div class="page-footer__container page__container">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="index.html">
           <svg width="102" height="34" fill="black" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="#footer-logo"></use>
           </svg>
@@ -230,24 +230,26 @@
         </div>
       </div>
     </footer>
-    <form class="popup">
-      <h2 class="popup__heding">Добавить в корзину</h2>
-      <span class="popup__text">Выберите размер</span>
-      <ul class="popup__radio">
-        <li>
-          <input class="visually-hidden popup__input" type="radio" name="radio" id="s" value="s" checked>
-          <label class="popup__label" for="s">s</label>
-        </li>
-        <li>
-          <input class="visually-hidden popup__input" type="radio" name="radio" id="m" value="m">
-          <label class="popup__label" for="m">m</label>
-        </li>
-        <li>
-          <input class="visually-hidden popup__input" type="radio" name="radio" id="l" value="l">
-          <label class="popup__label" for="l">l</label>
-        </li>
-      </ul>
-      <button class="popup__button">Добавить</button>
-    </form>
+    <div class="page__popup-container page__popup-container--hide">
+      <form class="popup">
+        <h2 class="popup-heading ">Добавить</br> в корзину</h2>
+        <span class="popup__text">Выберите размер:</span>
+        <ul class="popup__radio">
+          <li>
+            <input class="visually-hidden popup__input" type="radio" name="radio" id="s" value="s" checked>
+            <label class="popup__label" for="s">s</label>
+          </li>
+          <li>
+            <input class="visually-hidden popup__input" type="radio" name="radio" id="m" value="m">
+            <label class="popup__label" for="m">m</label>
+          </li>
+          <li>
+            <input class="visually-hidden popup__input" type="radio" name="radio" id="l" value="l">
+            <label class="popup__label" for="l">l</label>
+          </li>
+        </ul>
+        <button class="popup__button">Добавить</button>
+      </form>
+    </div>
   </body>
 </html>
