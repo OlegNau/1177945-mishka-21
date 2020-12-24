@@ -1,18 +1,23 @@
 .popup {
+  z-index: 6;
+  background-color: @white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
   background-color: @white;
   border-top: 1px solid @popup-color;
   border-bottom: 1px solid @popup-color;
-  box-shadow: 10 0 5px 5px @black;
+  box-shadow: 0 5px 10px 0 @color-shadow;
   margin: 0 auto;
   padding: 28px 30px 46px;
   text-align: center;
-  border-top: 1px solid @border-gray;
-  border-bottom: 1px solid @border-gray;
+  display: block;
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     width: 566px;
     height: 336px;
-    padding: 38px 108px 61px;
+    padding: 38px 93px 61px;
     outline: 1px solid @border-gray;
     border: none;
   }
@@ -21,6 +26,9 @@
 .popup__text {
   line-height: 30px;
   text-align: center;
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .popup__radio {
@@ -28,6 +36,11 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  @media (min-width: @tablet-width) {
+  margin-top: 18px;
+  margin-bottom: 28px;
+  }
 }
 
 .popup__radio li {
@@ -56,17 +69,41 @@
   }
 }
 
+.popup__input:checked+.popup__label {
+  border: 2px solid @special-green;
+}
+
+.popup__input:hover + .popup__label {
+  border: 2px solid @popup-special-border-hover;
+}
+
+.popup__input:checked:hover+.popup__label {
+  border: 2px solid @special-green;
+}
+
 .popup__button {
   color: @white;
   background-color: @light-green;
   width: 260px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 21px;
+  padding-bottom: 15px;
   border: none;
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+    width: 350px;
+  }
+}
+
+.popup__button:hover {
+  background-color: @green;
+}
+
+.popup__button:active {
+  background-color: @green;
+  opacity: 0.3;
 }
 
 .popup-heading {
@@ -74,5 +111,17 @@
   font-size: 25px;
   line-height: 30px;
   color: @black;
+  margin: 0;
   text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+  font-size: 30px;
+  line-height: 57px;
+  margin-bottom: 12px;
+  }
+}
+
+.popup-heading br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

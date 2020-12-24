@@ -94,14 +94,26 @@
   flex-wrap: wrap;
   margin-bottom: 35px;
   margin-top: 37px;
+  background-color: @white;
   @media (min-width: @tablet-width) {
     margin-top: 32px;
     padding-top: 79px;
     padding-bottom: 19px;
     flex-direction: row;
+    background-image: url(../img/review-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    @media (min-resolution: 2dppx) {
+      background-color: url(../img/review-tablet@2x.jpg) ;
+    }
   }
   @media (min-width: @desktop-width) {
-    padding: 79px 50px 73px 225px;
+    width: auto;
+    padding: 79px 0px 73px 175px;
+    background-color: url(../img/review-desktop.jpg) ;
+    @media (min-resolution: 2dppx) {
+      background-color: url(../img/review-desktop@2x.jpg) ;
+    }
   }
 }
 
@@ -158,5 +170,3 @@
   order: 3;
   width: 300px;
 }
-
-

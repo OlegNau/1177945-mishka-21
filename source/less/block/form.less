@@ -17,6 +17,7 @@
   @media (min-width: @desktop-width) {
     margin-top: 15px;
     padding-left: 61px;
+    text-align: start;
   }
 }
 
@@ -187,6 +188,18 @@
   }
 }
 
+.form__name--contacts-margin-top {
+  @media (min-width: @tablet-width) {
+    margin-top: 8px;
+    }
+}
+
+.form__name--comment-margin-top {
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+    }
+}
+
 .form__checkbox-container li:nth-child(2n+1) {
   @media (min-width: @tablet-width) {
     margin-right: 23px;
@@ -304,22 +317,9 @@
   opacity: 0.3;
 }
 
-.form__contacts-label {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 16px;
-  padding-right: 27px;
-  color: @light-green;
-  display: inline-block;
-  vertical-align: baseline;
-}
-
 .form__name-box--contacts {
   @media (min-width: @tablet-width) {
     align-self: center;
-  }
-  @media (min-width: @desktop-width) {
-    padding-left: 61px;
   }
 }
 
@@ -359,15 +359,15 @@
   min-height: 50px;
 }
 
-.form__contacts-input--phone:hover {
+.form__contacts-input-phone:hover {
   border-bottom: 2px solid @special-green;
 }
 
-.form__contacts-input--phone:focus {
+.form__contacts-input-phone:focus {
   border-bottom: 2px solid @special-green;
 }
 
-.form__contacts-input--phone svg {
+.form__contacts-input-phone svg {
   width: 28px;
   height: 27px;
   margin: 9px 7px 13px 0;
@@ -379,12 +379,12 @@
   }
 }
 
-.form__contacts-input--phone:hover svg {
+.form__contacts-input-phone:hover svg {
   opacity: 1;
   fill: @special-green;
 }
 
-.form__contacts-input--phone:focus svg {
+.form__contacts-input-phone:focus svg {
   opacity: 1;
   fill: @special-green;
 }
@@ -430,10 +430,6 @@
 }
 
 .form__comment-name {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 16px;
-  color: @light-green;
   @media (min-width: @tablet-width) {
     margin-top: 20px;
   }

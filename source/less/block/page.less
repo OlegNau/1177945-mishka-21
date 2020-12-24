@@ -1,10 +1,24 @@
 .page__popup-container {
-  background-color: @white;
-  opacity: 0.9;
+  background-color: @white-lite-opacity;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: block;
+}
+
+.page__popup-container--hide {
+  display: none;
 }
 
 .page {
   height: 100%;
+}
+
+.page__body {
+  position: relative;
 }
 
 .page__main-heading {
