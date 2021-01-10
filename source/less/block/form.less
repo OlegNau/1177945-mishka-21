@@ -156,8 +156,7 @@
   }
 }
 
-.form__radio-input:focus+label:before {
-  outline: thin dotted;
+.form__radio-input:focus + label::before {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -274,8 +273,7 @@
   }
 }
 
-.form__checkbox-input:focus+label:before {
-  outline: thin dotted;
+.form__checkbox-input:focus + label::before {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -388,6 +386,11 @@
   outline: none;
 }
 
+.form__contacts-input:focus + svg {
+  opacity: 1;
+  fill: @special-green;
+}
+
 .form__contacts-input-phone {
   width: 100%;
   display: flex;
@@ -401,6 +404,10 @@
 }
 
 .form__contacts-input-phone:focus {
+  border-bottom: 2px solid @special-green;
+}
+
+.form__contacts-input-phone:focus-within {
   border-bottom: 2px solid @special-green;
 }
 
@@ -428,11 +435,6 @@
   fill: @special-green;
 }
 
-.form__contacts-input-phone:focus svg {
-  opacity: 1;
-  fill: @special-green;
-}
-
 .form__contacts-input-email {
   min-height: 50px;
   width: 100%;
@@ -446,6 +448,10 @@
 }
 
 .form__contacts-input-email:focus {
+  border-bottom: 2px solid @special-green;
+}
+
+.form__contacts-input-email:focus-within {
   border-bottom: 2px solid @special-green;
 }
 

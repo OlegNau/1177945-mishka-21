@@ -4,7 +4,7 @@ const staticElements = document.querySelector(".page-navigation__static-elements
 const mainElements = document.querySelector(".page-navigation__main-elements");
 const weekProductButton = document.querySelector(".week-product__to-order");
 const popup = document.querySelector(".popup");
-const overlay = document.querySelector(".page__popup-overlay");
+const overlay = document.querySelector(".overlay");
 
 menuButton.classList.add("page-navigation__toggle--show");
 staticElements.classList.add("page-navigation__hide");
@@ -17,24 +17,35 @@ menuButton.addEventListener("click", function(evt) {
   menuButton.classList.toggle("page-navigation__toggle-close");
 });
 
-weekProductButton.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  overlay.classList.remove("page__popup-overlay--hide");
-  popup.classList.remove("popup--hide");
-});
+if (weekProductButton) {
+  weekProductButton.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    overlay.classList.remove("overlay--hide");
+    popup.classList.remove("popup--hide");
+  });
+}
 
 overlay.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.add("popup--hide");
-  overlay.classList.add("page__popup-overlay--hide");
+  overlay.classList.add("overlay--hide");
 });
 
 function modalClose ( e ) {
   if ( !e.keyCode |s| e.keyCode === 27 ) {
     popup.classList.add("popup--hide");
-    overlay.classList.add("page__popup-overlay--hide");
+    overlay.classList.add("overlay--hide");
   }
 }
 
 document.addEventListener('keydown', modalClose);
 
+const basket = document.querySelector(".products-item__basket");
+
+if (basket) {
+  basket.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    overlay.classList.remove("overlay--hide");
+    popup.classList.remove("popup--hide");
+  });
+}
