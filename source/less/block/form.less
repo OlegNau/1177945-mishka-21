@@ -156,6 +156,11 @@
   }
 }
 
+.form__radio-input:focus + label::before {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
 .form__checkbox-label {
   font-weight: bold;
   font-size: 17px;
@@ -268,6 +273,11 @@
   }
 }
 
+.form__checkbox-input:focus + label::before {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
 .form__customer-name {
   list-style: none;
   padding: 0;
@@ -376,6 +386,11 @@
   outline: none;
 }
 
+.form__contacts-input:focus + svg {
+  opacity: 1;
+  fill: @special-green;
+}
+
 .form__contacts-input-phone {
   width: 100%;
   display: flex;
@@ -389,6 +404,10 @@
 }
 
 .form__contacts-input-phone:focus {
+  border-bottom: 2px solid @special-green;
+}
+
+.form__contacts-input-phone:focus-within {
   border-bottom: 2px solid @special-green;
 }
 
@@ -432,6 +451,10 @@
   border-bottom: 2px solid @special-green;
 }
 
+.form__contacts-input-email:focus-within {
+  border-bottom: 2px solid @special-green;
+}
+
 .form__contacts-input-email svg {
   width: 37px;
   height: 23px;
@@ -454,6 +477,11 @@
 }
 
 .form__contacts-input-email:active svg {
+  fill: @special-green;
+  opacity: 1;
+}
+
+.form__contacts-input-email:focus svg {
   fill: @special-green;
   opacity: 1;
 }
@@ -543,6 +571,11 @@
 .form__button:active {
   background-color: @dark-gray;
   color: @white-opacity;
+}
+
+.form__button:focus {
+  background-color: @dark-gray;
+  color: @white;
 }
 
 .form__container {

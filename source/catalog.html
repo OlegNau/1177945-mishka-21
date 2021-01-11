@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
 
@@ -100,12 +100,12 @@
             </div>
             <div class="products-item__price-and-basket">
               <span class="products-item__price">1 200 руб.</span>
-              <a class="products-item__basket">
+              <a href="" class="products-item__basket">
                 <span class="visually-hidden">В корзину</span>
                 <svg width="21" height="18"  fill="black"  opacity="0.2" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="#icon-basket"></use>
                 </svg>
-                </a>
+              </a>
             </div>
           </div>
         </li>
@@ -128,7 +128,7 @@
             </div>
             <div class="products-item__price-and-basket">
               <span class="products-item__price">690 руб.</span>
-              <a class="products-item__basket">
+              <a href="" class="products-item__basket">
                 <span class="visually-hidden">В корзину</span>
                 <svg width="21" height="18"  fill="black"  opacity="0.2" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="#icon-basket"></use>
@@ -156,7 +156,7 @@
             </div>
             <div class="products-item__price-and-basket">
               <span class="products-item__price">1 500 руб.</span>
-              <a class="products-item__basket">
+              <a href="" class="products-item__basket">
                 <span class="visually-hidden">В корзину</span>
                 <svg width="21" height="18"  fill="black"  opacity="0.2" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="#icon-basket"></use>
@@ -230,26 +230,27 @@
         </div>
       </div>
     </footer>
-    <div class="page__popup-container page__popup-container--hide">
-      <form class="popup">
-        <h2 class="popup-heading ">Добавить<br> в корзину</h2>
-        <span class="popup__text">Выберите размер:</span>
-        <ul class="popup__radio">
-          <li>
-            <input class="visually-hidden popup__input" type="radio" name="radio" id="s" value="s" checked>
-            <label class="popup__label" for="s">s</label>
-          </li>
-          <li>
-            <input class="visually-hidden popup__input" type="radio" name="radio" id="m" value="m">
-            <label class="popup__label" for="m">m</label>
-          </li>
-          <li>
-            <input class="visually-hidden popup__input" type="radio" name="radio" id="l" value="l">
-            <label class="popup__label" for="l">l</label>
-          </li>
-        </ul>
-        <button class="popup__button">Добавить</button>
-      </form>
+    <div class="overlay overlay--hide">
     </div>
+    <form class="popup popup--hide">
+    <h2 class="popup-heading ">Добавить<br> в корзину</h2>
+      <span class="popup__text">Выберите размер:</span>
+      <ul class="popup__radio">
+        <li>
+          <input class="visually-hidden popup__input" type="radio" name="radio" id="s" value="s" checked>
+          <label class="popup__label" for="s">s</label>
+        </li>
+        <li>
+          <input class="visually-hidden popup__input" type="radio" name="radio" id="m" value="m">
+          <label class="popup__label" for="m">m</label>
+        </li>
+        <li>
+          <input class="visually-hidden popup__input" type="radio" name="radio" id="l" value="l">
+          <label class="popup__label" for="l">l</label>
+        </li>
+      </ul>
+      <button class="popup__button">Добавить</button>
+    </form>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

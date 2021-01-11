@@ -79,13 +79,14 @@
   border: none;
   top: 0;
   right: 0;
+  display: none;
   background-image: url("../img/open-menu.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
 
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
+.page-navigation__toggle--show {
+  display: block;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -218,6 +219,10 @@
   @media (min-width: @tablet-width) {
     margin-left: 0;
   }
+}
+
+.page-navigation__item-search:hover {
+  opacity: 1;
 }
 
 .page-navigation__item-search:hover svg {
