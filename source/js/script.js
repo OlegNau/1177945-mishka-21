@@ -38,7 +38,7 @@ function modalClose ( e ) {
   }
 }
 
-document.addEventListener('keydown', modalClose);
+document.addEventListener("keydown", modalClose);
 
 const basket = document.querySelector(".products-item__basket");
 
