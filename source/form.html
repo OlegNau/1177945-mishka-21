@@ -47,7 +47,7 @@
           <picture>
             <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
-            <img src="img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка">
+            <img src="img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
           </picture>
         </a>
         <button class="page-navigation__toggle" type="button">
@@ -69,19 +69,19 @@
             </span>
           </a>
         </div>
-          <div class="page-navigation__main-elements">
-            <a href="catalog.html" class="page-navigation__item">
-              <span>Каталог товаров</span>
-            </a>
-            <a class="page-navigation__item page-navigation__item-form">
-              <span>Вязание на заказ</span>
-            </a>
-          </div>
-          <div class="page-navigation__changing-elements">
-            <a class="page-navigation__item page-navigation__item-desktop" href="">Новые поступления</a>
-            <a class="page-navigation__item page-navigation__item-desktop" href="">Распродажа</a>
-          </div>
-          <span class="page-navigation__delivery">Бесплатная доставка по России</span>
+        <div class="page-navigation__main-elements">
+          <a href="catalog.html" class="page-navigation__item">
+            <span>Каталог товаров</span>
+          </a>
+          <a class="page-navigation__item page-navigation__item-form">
+            <span>Вязание на заказ</span>
+          </a>
+        </div>
+        <div class="page-navigation__changing-elements">
+          <a class="page-navigation__item page-navigation__item-desktop" href="">Новые поступления</a>
+          <a class="page-navigation__item page-navigation__item-desktop" href="">Распродажа</a>
+        </div>
+        <span class="page-navigation__delivery">Бесплатная доставка по России</span>
       </nav>
     </header>
     <main class="form-page-main">
@@ -109,36 +109,36 @@
         </div>
         <div class="form__color-container">
           <div class="form__color form__container">
-          <div class="form__name-box">
-            <span class="form__name form__name--background form__name--margin">Цвет</span>
+            <div class="form__name-box">
+              <span class="form__name form__name--background form__name--margin">Цвет</span>
+            </div>
+            <ul class="form__checkbox-container">
+              <li>
+                <input class="visually-hidden form__checkbox-input" type="checkbox" name="white" id="white" checked>
+                <label class="form__checkbox-label" for="white">Белый</label>
+              </li>
+              <li>
+                <input class="visually-hidden form__checkbox-input" type="checkbox" name="gray" id="gray" checked>
+                <label class="form__checkbox-label" for="gray">Серый</label>
+              </li>
+              <li>
+                <input class="visually-hidden form__checkbox-input" type="checkbox" name="tiffani" id="tiffani">
+                <label class="form__checkbox-label" for="tiffani">«Тиффани»</label>
+              </li>
+              <li>
+                <input class="visually-hidden form__checkbox-input" type="checkbox" name="black" id="black">
+                <label class="form__checkbox-label" for="black">Черный</label>
+              </li>
+              <li>
+                <input class="visually-hidden form__checkbox-input" type="checkbox" name="pink" id="pink">
+                <label class="form__checkbox-label" for="pink">Розовый</label>
+              </li>
+              <li>
+                <input class="visually-hidden form__checkbox-input" type="checkbox" name="orange" id="orange">
+                <label class="form__checkbox-label" for="orange">Оранжевый</label>
+              </li>
+            </ul>
           </div>
-          <ul class="form__checkbox-container">
-            <li>
-              <input class="visually-hidden form__checkbox-input" type="checkbox" name="white" id="white" checked>
-              <label class="form__checkbox-label" for="white">Белый</label>
-            </li>
-            <li>
-              <input class="visually-hidden form__checkbox-input" type="checkbox" name="gray" id="gray" checked>
-              <label class="form__checkbox-label" for="gray">Серый</label>
-            </li>
-            <li>
-              <input class="visually-hidden form__checkbox-input" type="checkbox" name="tiffani" id="tiffani">
-              <label class="form__checkbox-label" for="tiffani">«Тиффани»</label>
-            </li>
-            <li>
-              <input class="visually-hidden form__checkbox-input" type="checkbox" name="black" id="black">
-              <label class="form__checkbox-label" for="black">Черный</label>
-            </li>
-            <li>
-              <input class="visually-hidden form__checkbox-input" type="checkbox" name="pink" id="pink">
-              <label class="form__checkbox-label" for="pink">Розовый</label>
-            </li>
-            <li>
-              <input class="visually-hidden form__checkbox-input" type="checkbox" name="orange" id="orange">
-              <label class="form__checkbox-label" for="orange">Оранжевый</label>
-            </li>
-          </ul>
-        </div>
       </div>
         <div class="form__customer form__container">
           <div class="form__name-box">
@@ -241,5 +241,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

@@ -40,6 +40,7 @@
 }
 
 .page-main__main-heading-container {
+  border-top: 2px solid @border-gray;
   background-color: @header-background;
   background-image: url("../img/hero-mobile.jpg");
   background-position: center -19px;
@@ -51,6 +52,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    border: none;
     background-size: 768px 746px;
     background-position: center -64px;
     background-image: url("../img/hero-tablet.jpg");
@@ -80,6 +82,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 550px;
     font-size: 53px;
     line-height: 57px;
     text-align: start;

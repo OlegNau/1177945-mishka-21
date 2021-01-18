@@ -40,10 +40,11 @@ function modalClose ( e ) {
 
 document.addEventListener("keydown", modalClose);
 
-const basket = document.querySelector(".products-item__basket");
+let basket = document.querySelectorAll(".products-item__basket");
 
-if (basket) {
-  basket.addEventListener("click", function(evt) {
+for (let i = 0; i < basket.length; i++) {
+  let basketButton = basket[i];
+  basketButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     overlay.classList.remove("overlay--hide");
     popup.classList.remove("popup--hide");
