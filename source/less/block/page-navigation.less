@@ -14,6 +14,7 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+    padding-top: 12px;
   }
 }
 
@@ -40,6 +41,7 @@
     grid-template-areas:
       "mai mai log  st st  st"
       "ch ch ch ch del del";
+    grid-template-rows: auto 1fr;
   }
 }
 
@@ -58,7 +60,7 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    margin: 9px auto 9px;
+    margin: 9px auto 0;
     justify-items: center;
   }
 }
@@ -138,7 +140,7 @@
     font-weight: bold;
     font-size: 15px;
     line-height: 24px;
-    padding-top: 19px;
+    padding-top: 3px;
     padding-bottom: 19px;
   }
 }
@@ -154,6 +156,11 @@
     border: none;
     text-align: start;
     padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 34px;
+    padding-bottom: 29px;
   }
 }
 
@@ -197,6 +204,8 @@
     width: 183px;
     margin-right: 36px;
     margin-bottom: 19px;
+    padding-top: 10px;
+    padding-bottom: 0;
   }
 }
 
@@ -337,7 +346,6 @@
 .page-navigation__main-elements .page-navigation__item:first-child {
   @media (min-width: @desktop-width) {
     padding-top: 34px;
-    margin-right: 38px;
 
     &::before {
       content: "";
@@ -355,5 +363,11 @@
 .page-navigation__main-elements .page-navigation__item:last-child {
   @media (min-width: @desktop-width) {
     padding-top: 34px;
+  }
+}
+
+.page-navigation__main-elements .page-navigation__item:nth-child(2n) {
+  @media (min-width: @desktop-width) {
+    padding-left: 27px;
   }
 }
